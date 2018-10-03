@@ -1,0 +1,7 @@
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    .card {
+      background-color: map-get($theme-map, 'light');
+    }
+  }
+}

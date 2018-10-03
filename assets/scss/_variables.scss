@@ -1,0 +1,55 @@
+$theme-transition: 0.6s;
+$theme-list: () !default;
+$theme-list: map-merge(
+    (
+      'dark': (
+        'bg-color': #181717,
+        'dark': #f8f9fa,
+        'dark-hover': darken(#f8f9fa, 20%),
+        'light': #000,
+        'light-hover': lighten(#000, 20%),
+        'text-color': #ecf0f1,
+      ),
+      'light': (
+        'bg-color': #fff,
+        'dark': #000,
+        'dark-hover': lighten(#000, 20%),
+        'light': #f8f9fa,
+        'light-hover': darken(#f8f9fa, 20%),
+        'text-color': #2c3e50,
+      ),
+      'red': (
+        'bg-color': #c0392b,
+        'dark': darken(#c0392b, 20%),
+        'dark-hover': lighten(#c0392b, 20%),
+        'light': #e74c3c,
+        'light-hover': darken(#e74c3c, 20%),
+        'text-color': #ecf0f1,
+      ),
+      'blue': (
+        'bg-color': #2980b9,
+        'dark': #2980b9,
+        'dark-hover': lighten(#2980b9, 20%),
+        'light': #3498db,
+        'light-hover': darken(#3498db, 20%),
+        'text-color': #ecf0f1,
+      ),
+      'green': (
+        'bg-color': #27ae60,
+        'dark': #1abc9c,
+        'dark-hover': lighten(#1abc9c, 20%),
+        'light': #16a085,
+        'light-hover': darken(#16a085, 20%),
+        'text-color': #2c3e50,
+      ),
+      'yellow': (
+        'bg-color': #f1c40f,
+        'dark': darken(#f39c12, 10%),
+        'dark-hover': darken(#f39c12, 20%),
+        'light': #f39c12,
+        'light-hover': darken(#f39c12, 20%),
+        'text-color': #2c3e50,
+      ),
+    ),
+    $theme-list
+);

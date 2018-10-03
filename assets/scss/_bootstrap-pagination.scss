@@ -1,0 +1,12 @@
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    .page-link {
+      background-color: map-get($theme-map, 'light');
+      transition: background-color $theme-transition;
+
+      &:hover {
+        background-color: map-get($theme-map, 'light-hover');
+      }
+    }
+  }
+}

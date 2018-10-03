@@ -1,0 +1,20 @@
+title: Theme css
+email: disjfa@disjfa.nl
+description: >
+  Theme css, add themes to your website
+baseurl: "/theme-css"
+url: "https://disjfa.github.io"
+
+# Google
+google_analytics: UA-83598448-1
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+source: site
+host: 0.0.0.0
+
+facebook_url:
+github_url: https://github.com/disjfa/theme-css

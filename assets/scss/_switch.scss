@@ -1,0 +1,25 @@
+.switch-theme {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  background: white;
+
+  &-icon {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+@each $theme-name, $theme-map in $theme-list {
+  .switch-theme-#{$theme-name} {
+    background-color: map-get($theme-map, 'light');
+    box-shadow: 0 0 1px #000;
+
+    &:hover {
+      background-color: map-get($theme-map, 'light-hover');
+    }
+  }
+}

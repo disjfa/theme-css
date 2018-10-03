@@ -1,0 +1,10 @@
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    .navbar-light .navbar-brand {
+      color: map-get($theme-map, 'text-color');
+    }
+    .navbar-dark .navbar-brand {
+      color: map-get($theme-map, 'text-color');
+    }
+  }
+}

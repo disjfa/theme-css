@@ -1,0 +1,41 @@
+.d-none {
+  display: none !important;
+}
+
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    transition: background-color $theme-transition, color $theme-transition;
+    background: map-get($theme-map, 'bg-color');
+    color: map-get($theme-map, 'text-color');
+
+    .bg-light,
+    .bg-dark {
+      transition: background-color $theme-transition;
+    }
+
+    .text-light,
+    .text-dark {
+      transition: background-color $theme-transition;
+    }
+
+    .theme-#{$theme-name}-only {
+      display: block !important;
+    }
+
+    .bg-dark {
+      background-color: map-get($theme-map, 'dark') !important;
+    }
+
+    .bg-light {
+      background-color: map-get($theme-map, 'light') !important;
+    }
+
+    .text-dark {
+      color: map-get($theme-map, 'dark') !important;
+    }
+
+    .text-light {
+      color: map-get($theme-map, 'light') !important;
+    }
+  }
+}

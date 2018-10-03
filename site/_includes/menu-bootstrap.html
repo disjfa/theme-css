@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">{{ site.title }}</a>
+        <div class="navbar-nav">
+            {% if site.facebook_url %}
+                <a href="{{ site.facebook_url }}" class="p-2 text-dark">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            {% endif %}
+            {% if site.twitter_url %}
+                <a href="{{ site.twitter_url }}" class="p-2 text-dark">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            {% endif %}
+            {% if site.github_url %}
+                <a href="{{ site.github_url }}" class="p-2 text-dark">
+                    <i class="fab fa-github"></i>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>

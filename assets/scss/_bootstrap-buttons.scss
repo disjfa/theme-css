@@ -1,0 +1,29 @@
+@each $theme-name, $theme-map in $theme-list {
+  .theme-#{$theme-name} {
+    .btn-light {
+      background-color: map-get($theme-map, 'light');
+      color: map-get($theme-map, 'dark');
+      transition: background-color $theme-transition, color $theme-transition;
+      border-color: map-get($theme-map, 'light-hover');
+
+      &:hover {
+        color: map-get($theme-map, 'dark-hover');
+        background-color: map-get($theme-map, 'light-hover');
+        border-color: map-get($theme-map, 'light');
+      }
+    }
+
+    .btn-dark {
+      background-color: map-get($theme-map, 'dark');
+      color: map-get($theme-map, 'light');
+      transition: background-color $theme-transition, color $theme-transition;
+      border-color: map-get($theme-map, 'dark-hover');
+
+      &:hover {
+        color: map-get($theme-map, 'light-hover');
+        background-color: map-get($theme-map, 'dark-hover');
+        border-color: map-get($theme-map, 'dark');
+      }
+    }
+  }
+}
