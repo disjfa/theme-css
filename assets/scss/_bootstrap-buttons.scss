@@ -7,9 +7,8 @@
       border-color: map-get($theme-map, 'light-hover');
 
       &:hover {
-        color: map-get($theme-map, 'dark-hover');
-        background-color: map-get($theme-map, 'light-hover');
-        border-color: map-get($theme-map, 'light');
+        background-color: darken(map-get($theme-map, 'light'), 10%);
+        border-color: darken(map-get($theme-map, 'light-hover'), 10%);
       }
     }
 
@@ -20,9 +19,16 @@
       border-color: map-get($theme-map, 'dark-hover');
 
       &:hover {
-        color: map-get($theme-map, 'light-hover');
-        background-color: map-get($theme-map, 'dark-hover');
-        border-color: map-get($theme-map, 'dark');
+        background-color: lighten(map-get($theme-map, 'dark'), 10%);
+        border-color: lighten(map-get($theme-map, 'dark-hover'), 10%);
+      }
+    }
+
+    .btn-link {
+      color: map-get($theme-map, 'link-color');
+
+      &:hover {
+        color: darken(map-get($theme-map, 'link-color'), 10%);
       }
     }
   }

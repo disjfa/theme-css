@@ -1,12 +1,9 @@
 @each $theme-name, $theme-map in $theme-list {
   .theme-#{$theme-name} {
-    .page-link {
-      background-color: map-get($theme-map, 'light');
-      transition: background-color $theme-transition;
+    a:not(.btn) {
       color: map-get($theme-map, 'link-color');
 
       &:hover {
-        background-color: map-get($theme-map, 'light-hover');
         color: darken(map-get($theme-map, 'link-color'), 10%);
       }
     }

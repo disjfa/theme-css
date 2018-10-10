@@ -9,6 +9,7 @@ $theme-list: map-merge(
         'light': #000,
         'light-hover': lighten(#000, 20%),
         'text-color': #ecf0f1,
+        'link-color': #007bff,
       ),
       'light': (
         'bg-color': #fff,
@@ -17,14 +18,16 @@ $theme-list: map-merge(
         'light': #f8f9fa,
         'light-hover': darken(#f8f9fa, 20%),
         'text-color': #2c3e50,
+        'link-color': #007bff,
       ),
       'red': (
         'bg-color': #c0392b,
         'dark': darken(#c0392b, 20%),
         'dark-hover': lighten(#c0392b, 20%),
-        'light': #e74c3c,
+        'light': lighten(#e74c3c, 10%),
         'light-hover': darken(#e74c3c, 20%),
         'text-color': #ecf0f1,
+        'link-color': #2ecc71,
       ),
       'blue': (
         'bg-color': #2980b9,
@@ -33,6 +36,7 @@ $theme-list: map-merge(
         'light': #3498db,
         'light-hover': darken(#3498db, 20%),
         'text-color': #ecf0f1,
+        'link-color': #2ecc71,
       ),
       'green': (
         'bg-color': #27ae60,
@@ -41,6 +45,7 @@ $theme-list: map-merge(
         'light': #16a085,
         'light-hover': darken(#16a085, 20%),
         'text-color': #2c3e50,
+        'link-color': #007bff,
       ),
       'yellow': (
         'bg-color': #f1c40f,
@@ -48,7 +53,8 @@ $theme-list: map-merge(
         'dark-hover': darken(#f39c12, 20%),
         'light': #f39c12,
         'light-hover': darken(#f39c12, 20%),
-        'text-color': #2c3e50,
+        'text-color': #34495e,
+        'link-color': #007bff,
       ),
     ),
     $theme-list
